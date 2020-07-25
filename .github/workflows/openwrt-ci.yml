@@ -65,7 +65,7 @@ jobs:
           cd package
           mkdir openwrt-packages
           cd openwrt-packages
-          git clone https://github.com/maxlicheng/luci-app-ssr-plus.git
+          # git clone https://github.com/maxlicheng/luci-app-ssr-plus.git
           git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git
 
       - name: Generate configuration file
@@ -157,7 +157,7 @@ jobs:
           # 常用LuCI插件选择:
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-app-adbyby-plus=y
-          CONFIG_PACKAGE_luci-app-aria2=n
+          # CONFIG_PACKAGE_luci-app-aria2 is not set
           # CONFIG_PACKAGE_luci-app-baidupcs-web=y
           # CONFIG_PACKAGE_luci-app-docker=y
           # CONFIG_PACKAGE_luci-app-frpc=y
@@ -165,7 +165,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-minidlna=y
           # CONFIG_PACKAGE_luci-app-openvpn=y
           # CONFIG_PACKAGE_luci-app-openvpn-server=y
-          CONFIG_PACKAGE_luci-app-qbittorrent=n
+          # CONFIG_PACKAGE_luci-app-qbittorrent is not set
           CONFIG_PACKAGE_luci-app-helloworld=y
           # CONFIG_PACKAGE_luci-app-ssr-plus=y
           # CONFIG_PACKAGE_luci-app-ttyd=y
@@ -174,7 +174,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-webadmin=y
           # CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-unblockneteasemusic=y
-          CONFIG_PACKAGE_luci-app-unblockmusic=n
+          # CONFIG_PACKAGE_luci-app-unblockmusic is not set
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
           EOF
 
