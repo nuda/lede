@@ -67,6 +67,8 @@ jobs:
           cd openwrt-packages
           git clone https://github.com/maxlicheng/luci-app-ssr-plus.git
           git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git
+          git clone https://github.com/frainzy1477/luci-app-clash.git
+          git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 
       - name: Generate configuration file
         run: |
@@ -175,6 +177,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-unblockneteasemusic=y
           # CONFIG_PACKAGE_luci-app-unblockmusic is not set
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
+          CONFIG_PACKAGE_luci-app-clash=y
+          CONFIG_PACKAGE_luci-app-adguardhome=y
           EOF
 
           # LuCI主题:
